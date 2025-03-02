@@ -139,7 +139,7 @@ body{
     font-size: 20px;
 }
 .list-bar ul {
-    padding: 100px;
+    padding: 50px;
     gap: 40px;
     flex-grow: 1;
     word-spacing: 100px;
