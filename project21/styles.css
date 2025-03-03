@@ -36,11 +36,12 @@ body{
 .links {
     list-style: none;
     display: flex;
-    gap: 20px; 
+    gap: 10px; 
     white-space: nowrap;
     margin-left: 300px; 
     flex-grow: 1; 
     align-items: center;
+    font-family: "Arial", sans-serif;
 }
 
 .links ul {
@@ -49,7 +50,7 @@ body{
 
 .links a {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     color: white;
     padding: 10px 15px;
     transition: 0.3s ease;
@@ -96,7 +97,7 @@ body{
 }
 
 .container {
-    height: 600px;
+    height: 680px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -106,10 +107,8 @@ body{
 }
 
 .text-box {
-    width: 50%;
-    font-size: 18px;
-    line-height: 1.5;
-    margin-top: -450px;
+    width: 48%;
+    margin-top: -100px;
 }
 
 .img-box1 {
@@ -123,27 +122,11 @@ body{
 }
 
 .list-bar {
-    height: 90px;
+    height: 80px;
     width: 100%;
-    list-style: none;
-    background-color: #8fa18a;
-    color: white;
-    align-items: center;
+    background-color: #8fa18a; /* Background color same as in image */
     display: flex;
-    justify-content: center;  /* Centers horizontally */
-    align-items: center;  /* Centers vertically */
-}
-
-.list-bar ul li {
-    display: inline-block;
-    font-size: 20px;
-}
-.list-bar ul {
-    padding: 50px;
-    gap: 40px;
-    flex-grow: 1;
-    word-spacing: 100px;
-    flex-direction: row;
+    justify-content: space-evenly; /* Distribute text evenly */
 }
 
 .suis {
@@ -168,22 +151,39 @@ p1 {
 }
 
 p2 {
-    font-size: 60px;
+    font-size: 45px;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
     color: #8fa18a;
-    font-weight: bolder;
     margin-bottom: 10px;
-    color: #8fa18a;
 }
 
 p3 {
-    color: #392d1f;
-    margin-bottom: 40px
+    font-size: 16px;
+    color: #5a554f;
+    font-family: "Arial", sans-serif;
+    margin-bottom: 20px
 }
 .project {
+    height: 700px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 100px;
     background-color: #ddcdba;
-    gap: 100px;
+    margin-bottom: 150px;
+}
+
+.text-box2 {
+    max-width: 550px;
+    margin-top: 10px;
+    overflow-wrap: break-word;
+}
+
+.img2 {
+    margin-right: 100px;
 }
 
 p4 {
@@ -204,8 +204,10 @@ p4 {
 p5 {
     margin-top: 10px;
     margin-left: 100px;
-    font-size: 50px;
+    font-size: 35px;
+    font-family: "Arial", sans-serif;
     color: white;
+    font-weight: bolder;
 }
 
 .info-box {
@@ -260,8 +262,18 @@ p5 {
 .from-wrapper {
     padding-left: 100px;
     display: flex;
-    padding-top: 50px;
-    height: 500px;
+    padding-top: 100px;
+    height: 600px;
+    margin-bottom: 100px;
+}
+
+.form-desc {
+    font-size: 42px;
+    font-family: "Arial", sans-serif;
+    color: #ffffff; /* White */
+    max-width: 370px;
+    overflow-wrap: break-word;
+    font-weight: 100px;
 }
 
 p6 {
@@ -270,11 +282,13 @@ p6 {
 }
 
 .form-container {
-    width: 600px;
-    padding: 20px;
+    width: 650px;
+    padding: 40px 20px;
     border: 2px solid#f3efeb ; /* Border color */
     border-radius: 8px;
     color: white;
+    font-family: "Arial", sans-serif;
+    font-size: 13px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     background-color: #ddcdba;
     position: absolute;
@@ -285,7 +299,7 @@ p6 {
 /* Input fields styling */
 .form-container input, .form-container textarea {
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     margin-top: 8px;
     margin-bottom: 15px;
     border: 1px solid #f3efeb;
@@ -302,6 +316,8 @@ p6 {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 12px;
 }
 
 .required-star {
@@ -309,6 +325,7 @@ p6 {
     font-size: 18px;
     font-weight: bold;
 }
+
 
 .menu-toggle {
     display: none;
