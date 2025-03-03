@@ -261,7 +261,7 @@ p5 {
     padding-left: 100px;
     display: flex;
     padding-top: 50px;
-    margin-bottom: 100px;
+    height: 500px;
 }
 
 p6 {
@@ -279,6 +279,7 @@ p6 {
     background-color: #ddcdba;
     position: absolute;
     right: 100px;
+    margin-bottom: 50px;
 }
 
 /* Input fields styling */
@@ -308,7 +309,6 @@ p6 {
     font-size: 18px;
     font-weight: bold;
 }
-
 
 .menu-toggle {
     display: none;
