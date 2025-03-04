@@ -80,3 +80,52 @@
 .bold-white {
     font-weight: bold;
 }
+
+p1i {
+    font-size: 35px;
+    margin-top: 15px;
+    margin-left: 20px;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+}
+
+p2i {
+    font-size: 24px;
+    color: #8fa18a;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.pack-list {
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.pack-list li {
+    font-size: 17px;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+p3i {
+    margin-top: 35px;
+    margin-left: 40px;
+    font-size: 30px;
+}
+
+.pack-cost {
+    font-size: 35px;
+    font-weight: bold;
+    color: #8fa18a;
+}
+
+.info2-head {
+    font-size: 28px;
+    margin-top: 15px;
+    margin-left: 20px;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+}

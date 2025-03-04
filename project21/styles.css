@@ -222,12 +222,13 @@ p5 {
 
 .info {
     width: 275px;
-    height: 400px;
+    height: 375px;
     background-color: #ddcdba;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     font-size: 18px;
     border-radius: 20px;
     border: 1px solid #f3efeb;
@@ -236,12 +237,11 @@ p5 {
 
 .info2 {
     width: 430px;
-    height: 400px;
+    height: 375px;
     background-color: #ddcdba;
     color: white;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     font-size: 18px;
     border-radius: 20px;
     border: 1px solid #f3efeb;
