@@ -21,7 +21,7 @@ async function handleSubmit(event) {
     };
 
     try {
-        const response = await fetch("http://localhost:3000/submit-form", {
+        const response = await fetch("http://localhost:8000/api/submit-form", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(formData),

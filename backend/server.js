@@ -4,7 +4,7 @@ const cors = require("cors");
 const db = require("./config/database");
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8000;
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
 });
 
 // Route to handle form submission
-app.post("/submit-form", (req, res) => {
+app.post("/api/submit-form", (req, res) => {
     const { name, email, message } = req.body;
 
     if (!name || !email || !message) {
