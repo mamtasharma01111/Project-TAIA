@@ -2,6 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const db = require("./config/database");
+const contactFormRoute = require('./Router/contactFormRoutes');
 
 const app = express();
 const PORT = process.env.PORT || 8000;
@@ -15,24 +16,17 @@ app.get("/", (req, res) => {
 });
 
 // Route to handle form submission
-app.post("/api/submit-form", (req, res) => {
-    const { name, email, message } = req.body;
+app.use("/api/submit-form", contactFormRoute);
 
-    if (!name || !email || !message) {
-        return res.status(400).json({ success: false, message: "All fields are required!" });
-    }
-
-    const sql = "INSERT INTO contacts (name, email, message) VALUES (?, ?, ?)";
-    db.query(sql, [name, email, message], (err, result) => {
-        if (err) {
-            console.error("Error inserting data:", err);
-            return res.status(500).json({ success: false, message: "Server error" });
-        }
-        res.status(201).json({ success: true, message: "Form submitted successfully!", data: result });
+db.sync({ force: true }) 
+    .then(() => {
+        console.log("Database synced successfully and tables created!");
+        app.listen(PORT, () => {
+            console.log(` Server running on http://localhost:${PORT}`);
+        });
+    })
+    .catch((error) => {
+        console.error(" Error syncing database:", error);
     });
-});
 
-// Start server
-app.listen(PORT, () => {
-    console.log(`🚀 Server running on port ${PORT}`);
-});
+
