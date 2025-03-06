@@ -6,6 +6,7 @@
 
 body{
     background-color: #ddcdba;
+    font-family: "Arial", sans-serif;
 }
 
 .navbar {
@@ -77,6 +78,8 @@ body{
 .btn1 {
     background-color: #49829e;
     color: white;
+    justify-content: center;
+    width: 155px;
 }
 
 .btn2 {
@@ -84,6 +87,8 @@ body{
     color: white;
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 155px;
 }
 
 .btn3 {
@@ -326,7 +331,89 @@ p6 {
     font-weight: bold;
 }
 
+.footer {
+    background-color: #8fa18a;
+    height: 270px;
+    display: flex;
+    flex-direction: row;
+    gap: 230px;
+    color: #ddcdba;
+    font-family: "Arial", sans-serif;
+    font-size: 15px;
+}
 
+.footer-heading {
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+.footer-1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-top: 50px;
+    gap: 35px;
+    text-align: center;
+}
+
+.footer-logo {
+    background-image: url(logo.png);
+    background-size: 120% auto;
+    background-position: center;
+    height: 80px;
+    width: 120%;
+    margin-left: -40px;
+}
+
+.insta-links {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.footer-2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-top: 50px;
+    gap: 15px;
+}
+
+.footer-3 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-top: 50px;
+    gap: 15px;
+}
+
+.footer-line {
+    height: 1px;
+    background-color: rgb(61, 37, 10);
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.copyright-section {
+    height: 75px;
+    background-color: #8fa18a;
+}
+
+.copyright {
+    color: rgb(33, 33, 33);
+    margin-left: 100px;
+    margin-top: 27px;
+    font-size: 13px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.copyright-text {
+    margin-right: 525px;
+    color: #ddcdba;
+}
 .menu-toggle {
     display: none;
     background: none;
