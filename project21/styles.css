@@ -331,12 +331,33 @@ p6 {
     font-weight: bold;
 }
 
+.email-logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    vertical-align: middle;
+    margin-left: -70px;
+    margin-bottom: -52px;
+    margin-top: -10px;
+    display: list-item;
+}
+
+.contact-logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    vertical-align: middle;
+    margin-bottom: -51px;
+    margin-left: -8px;
+    display: list-item;
+}
+
 .footer {
     background-color: #8fa18a;
     height: 270px;
     display: flex;
     flex-direction: row;
-    gap: 230px;
+    gap: 190px;
     color: #ddcdba;
     font-family: "Arial", sans-serif;
     font-size: 15px;
@@ -354,24 +375,33 @@ p6 {
     margin-left: 100px;
     margin-top: 50px;
     gap: 35px;
-    text-align: center;
 }
 
 .footer-logo {
     background-image: url(logo.png);
-    background-size: 120% auto;
+    background-size: 100% auto;
     background-position: center;
     height: 80px;
     width: 120%;
-    margin-left: -40px;
+    margin-left: -80px;
 }
 
 .insta-links {
     color: #ffffff;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 13px;
 }
 
+.insta-logo {
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+    border-radius: 100%;
+}
+
+.link-gap {
+    margin-left: 20px;
+}
 .footer-2 {
     display: flex;
     flex-direction: column;
