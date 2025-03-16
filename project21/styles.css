@@ -490,7 +490,7 @@ p6 {
     height: 270px;
     display: flex;
     flex-direction: row;
-    gap: 150px;
+    gap: 200px;
     color: #ddcdba;
     font-family: "Arial", sans-serif;
     font-size: 15px;
@@ -546,7 +546,7 @@ p6 {
 .footer-3 {
     display: flex;
     flex-direction: column;
-    margin-left: 80px;
+    margin-left: 100px;
     margin-top: 50px;
     gap: 15px;
 }
@@ -574,7 +574,7 @@ p6 {
 }
 
 .copyright-text {
-    margin-right: 480px;
+    margin-right: 600px;
     color: #ddcdba;
 }
 .menu-toggle {
