@@ -118,6 +118,8 @@ body{
     font-weight: bold;
     color: #ffffff; /* White */
     margin-top: 120px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 /* Description paragraph */
@@ -457,67 +459,237 @@ p6 {
 .bold-white {
     font-weight: bold;
 }
-
-
-@media screen and (max-width: 1024px) {
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+    .navbar {
+        padding: 0 15px;
+    }
+    
+    .logo {
+        margin-left: 20px;
+    }
+    
     .links {
         margin-left: 50px;
+        gap: 5px;
+    }
+    
+    .container {
+        margin-left: 50px;
+    }
+    
+    .page2-1 {
+        margin-right: 50px;
+    }
+    
+    .from-wrapper {
+        padding-left: 50px;
+    }
+    
+    .form-container {
+        right: 50px;
+    }
+    
+    .footer {
+        gap: 100px;
+    }
+    
+    .footer-1, .footer-2, .footer-3 {
+        margin-left: 50px;
+    }
+    
+    .copyright-text {
+        margin-right: 200px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .navbar {
+        height: auto;
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    .nav-logo, .logo {
+        margin: 0 auto;
+    }
+    
+    .links {
+        margin: 15px 0;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .nav-buttons {
+        margin: 10px auto;
+    }
+    
+    .container {
+        height: auto;
+        margin: 30px 20px;
+        justify-content: center;
+    }
+    
+    .text-box {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        padding: 0 20px;
+    }
+    
+    .main-heading {
+        font-size: 40px;
+        margin-top: 30px;
+    }
+    
+    .page2-1 {
+        margin: 30px auto;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .from-wrapper {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        height: auto;
+    }
+    
+    .form-desc {
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+    
+    .form-container {
+        position: static;
+        width: 100%;
+        margin: 0;
+    }
+    
+    .footer {
+        flex-direction: column;
+        height: auto;
+        gap: 30px;
+        padding: 30px 0;
+    }
+    
+    .footer-1, .footer-2, .footer-3 {
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .footer-logo {
+        margin: 0 auto;
+    }
+    
+    .insta-links {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    
+    .link-gap {
+        display: none;
+    }
+    
+    .copyright {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin: 20px 0;
+    }
+    
+    .copyright-text {
+        margin-right: 0;
+    }
+    
+    .copyright-section {
+        height: auto;
+        padding-bottom: 20px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
-
-    .links {
-        display: none;
-        position: absolute;
-        top: 85px;
-        left: 0;
-        width: 100%;
-        background-color: #8fa18a;
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
+    .list-bar {
+        flex-wrap: wrap;
+        height: auto;
         padding: 10px 0;
     }
-
-    .links.show {
-        display: flex;
-    }
-
-    .nav-buttons {
-        flex-direction: column;
-    }
-
-    .container {
-        flex-direction: column;
+    
+    .list-bar span {
+        width: 50%;
         text-align: center;
-        padding: 20px;
     }
-
-    .text-box {
-        width: 90%;
+    
+    .main-heading {
+        font-size: 32px;
+    }
+    
+    .description {
         font-size: 16px;
     }
-
-    .img-box1 {
-        width: 80%;
+    
+    .form-desc {
+        font-size: 24px;
+    }
+    
+    .email-logo, .contact-logo {
+        margin-left: 0;
+        display: inline-block;
     }
 }
 
-@media screen and (max-width: 480px) {
-    .btn1, .btn2 {
-        font-size: 12px;
-        padding: 10px;
+@media screen and (max-width: 576px) {
+    .links ul {
+        margin: 5px 0;
     }
-
-    .text-box {
+    
+    .links a {
+        font-size: 14px;
+        padding: 8px;
+    }
+    
+    .btn1, .btn2, .btn3, .btn4 {
+        width: 130px;
+        font-size: 12px;
+        padding: 10px 8px;
+    }
+    
+    .nav-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .main-heading {
+        font-size: 28px;
+    }
+    
+    .gallery {
+        height: auto;
+        padding: 30px 0;
+    }
+    
+    .list-bar span {
+        width: 100%;
+    }
+    
+    p1 {
+        font-size: 14px;
+        padding: 8px 14px;
+    }
+    
+    p2 {
+        font-size: 32px;
+    }
+    
+    p3 {
         font-size: 14px;
     }
-
-    .img-box1 {
-        width: 90%;
+    
+    .form-container {
+        padding: 20px 15px;
+        height: auto;
     }
 }
