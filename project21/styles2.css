@@ -11,7 +11,7 @@ body{
 
 .navbar {
     height: 85px;
-    background-color: #8fa18a;
+    background-color: #49829e;
     color: white;
     display: flex; 
     align-items: center;
@@ -76,7 +76,7 @@ body{
 }
 
 .btn1 {
-    background-color: #49829e;
+    background-color: #8fa18a;
     color: white;
     justify-content: center;
     width: 155px;
@@ -93,76 +93,71 @@ body{
 
 .btn3 {
     background: none;
-    border: 2px solid #8fa18a;
-    color: #8fa18a;
+    border: 1.5px solid #49829e;
+    color: #49829e;
     border-radius: 8px;
     font-size: 14px;
-    padding: 12px 11px;
+    padding: 12px 18px;
     cursor: pointer;
 }
 
 .container {
-    height: 680px;
+    height: 580px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding-top: 30px;
+    margin-left: 70px;
     background-color: #ddcdba;
-    margin-left: 50px;
-}
-
-.text-box {
-    width: 48%;
-    margin-top: -100px; 
-}
-
-.homeimage1 {
-    height: 620px;
-    width: 500px;
-    margin-right: 90px;
 }
 
 .main-heading {
-    font-size: 60px;
+    font-size: 45px;
     color: #5a554f; /* Dark brown text */
     font-family: "Arial", sans-serif;
-    text-align: center;
     font-weight: bold;
-    color: #ffffff; /* White */
-    margin-top: 70px;
-}
-
-.highlight {
-    color: #8fa18a; /* Greenish tone */
-    font-weight: bold;
-}
-
-.quote {
-    font-size: 30px;
-    font-family: "Arial", sans-serif;
     color: #ffffff; /* White */
     margin-top: 20px;
 }
 
+/* Description paragraph */
 .description {
     font-size: 19px;
     color: #5a554f; /* Dark brown */
     line-height: 1.3;
-    margin-top: 15px;
+    margin-top: 25px;
     margin-bottom: 20px;
 }
+
+/* Highlighted words */
+.highlight {
+    color: #49829e; /* Greenish tone */
+    font-weight: bold;
+}
+
+.page2-1 {
+    height: 500px;
+    width: 400px;
+    margin-right: 150px;
+}
+
+
+.text-box {
+    width: 48%;
+    margin-top: -100px;
+}
+
 
 .list-bar {
     height: 80px;
     width: 100%;
-    background-color: #8fa18a; /* Background color same as in image */
+    background-color: #49829e; /* Background color same as in image */
     display: flex;
     justify-content: space-evenly; /* Distribute text evenly */
 }
 
 .list-bar span {
-    background-color: #8fa18a; /* Background color same as in image */
+    background-color: #49829e; /* Background color same as in image */
     display: flex;
     justify-content: space-evenly; /* Distribute text evenly */
     align-items: center;
@@ -174,7 +169,8 @@ body{
     font-family: Arial, sans-serif;  /* Centers vertically */
 }
 
-.suis {
+
+.peintures {
     text-align: center;
     width: 100%;
     flex-direction: column;
@@ -184,38 +180,25 @@ body{
     justify-content: center;
 }
 
-.sub-heading {
-    font-size: 45px;
-    font-family: "Arial", sans-serif;
-    font-weight: bold;
-    color: #8fa18a;
-    margin-top: 70px;
-}
-
-.sub-point {
-    font-size: 20px;
-    font-family: "Arial", sans-serif;
-    color: #ffffff; /* White */
-    margin-top: 25px;
-}
-
-.description2 {
-    font-size: 17px;
-    color: white;/* Dark brown */
-    line-height: 1.4;
-    margin-bottom: 5px;
-    word-spacing: 3px;
-}
-
-.bold-brown {
-    font-weight: bold;
+.btn4 {
+    background-color: #49829e;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 155px;
+    font-size: 14px;
+    padding: 12px 9px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
 p1 {
     margin-top: 100px;
-    border: 2px solid#8fa18a;
+    border: 2px solid#49829e;
     border-radius: 20px;
-    color: #8fa18a;
+    color: #49829e;
     padding: 10px 18px;
     display: block;
     font-size: 16px;
@@ -226,7 +209,7 @@ p2 {
     font-size: 45px;
     font-family: "Arial", sans-serif;
     font-weight: bold;
-    color: #8fa18a;
+    color: #49829e;
     margin-bottom: 10px;
 }
 
@@ -240,91 +223,17 @@ p3 {
     height: 700px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding-left: 50px;
     background-color: #ddcdba;
-    margin-bottom: 150px;
-}
-
-.text-box2 {
-    max-width: 550px;
-    margin-top: 10px;
-    overflow-wrap: break-word;
-}
-
-.homeimage2 {
-    margin-top: -300px;
-    margin-right: 150px;
-    height: 400px;
-    width: 300px;
-    border-top-left-radius: 170px;
-    border-top-right-radius: 170px;
-    box-shadow: 0 0 0 15px #8fa18a;
 }
 
 p4 {
-    margin-left: 50px;
+    margin-left: 100px;
     max-width: 600px;
 }
 
-.lessoins {
-    text-align: center;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    background-color: #ddcdba;
-    display: flex;
-    justify-content: center;
-}
-
-p5 {
-    margin-top: 10px;
-    margin-left: 50px;
-    font-size: 35px;
-    font-family: "Arial", sans-serif;
-    color: white;
-    font-weight: bolder;
-}
-
-.info-box {
-    display: flex;
-    margin-top: 20px;
-    padding-left: 50px;
-    padding-right: 100px;
-    justify-content: space-between; /* Adjust spacing */
-    align-items: center;
-    gap: 15px; /* Space between boxes */
-}
-
-.info {
-    width: 275px;
-    height: 375px;
-    background-color: #ddcdba;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 18px;
-    border-radius: 20px;
-    border: 1px solid #f3efeb;
-    margin-bottom: 20px;
-}
-
-.info2 {
-    width: 430px;
-    height: 375px;
-    background-color: #ddcdba;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    font-size: 18px;
-    border-radius: 20px;
-    border: 1px solid #f3efeb;
-    margin-bottom: 20px;
-}
 
 .contact {
     text-align: center;
@@ -354,65 +263,6 @@ p5 {
     font-weight: 100px;
 }
 
-.form-desc p{
-    font-size: 17px;
-    margin-bottom: 5px;
-    margin-left: 60px;
-}
-
-.bold-white {
-    font-weight: bold;
-}
-
-p1i {
-    font-size: 35px;
-    margin-top: 15px;
-    margin-left: 20px;
-    font-family: "Arial", sans-serif;
-    font-weight: bold;
-}
-
-p2i {
-    font-size: 24px;
-    color: #8fa18a;
-    font-family: "Arial", sans-serif;
-    font-weight: bold;
-    margin-left: 20px;
-}
-
-.pack-list {
-    margin-left: 20px;
-    margin-top: 15px;
-}
-
-.pack-list li {
-    font-size: 17px;
-    font-family: "Arial", sans-serif;
-    font-weight: bold;
-    margin-left: 20px;
-    margin-top: 15px;
-}
-
-p3i {
-    margin-top: 35px;
-    margin-left: 40px;
-    font-size: 30px;
-}
-
-.pack-cost {
-    font-size: 35px;
-    font-weight: bold;
-    color: #8fa18a;
-}
-
-.info2-head {
-    font-size: 28px;
-    margin-top: 15px;
-    margin-left: 20px;
-    font-family: "Arial", sans-serif;
-    font-weight: bold;
-}
-
 p6 {
     padding-top: 100px;
     margin-top: 50px;
@@ -431,7 +281,6 @@ p6 {
     position: absolute;
     right: 100px;
     margin-bottom: 50px;
-    margin-left: 50px;
 }
 
 /* Input fields styling */
@@ -449,7 +298,7 @@ p6 {
 .form-container button {
     width: 100%;
     padding: 10px;
-    background-color: #8fa18a;
+    background-color: #49829e;
     color: #ddcdba;
     border: none;
     border-radius: 5px;
@@ -486,11 +335,11 @@ p6 {
 }
 
 .footer {
-    background-color: #8fa18a;
+    background-color: #49829e;
     height: 270px;
     display: flex;
     flex-direction: row;
-    gap: 150px;
+    gap: 190px;
     color: #ddcdba;
     font-family: "Arial", sans-serif;
     font-size: 15px;
@@ -535,10 +384,11 @@ p6 {
 .link-gap {
     margin-left: 20px;
 }
+
 .footer-2 {
     display: flex;
     flex-direction: column;
-    margin-left: 100px;
+    margin-left: 50px;
     margin-top: 50px;
     gap: 15px;
 }
@@ -546,7 +396,7 @@ p6 {
 .footer-3 {
     display: flex;
     flex-direction: column;
-    margin-left: 80px;
+    margin-left: 50px;
     margin-top: 50px;
     gap: 15px;
 }
@@ -560,7 +410,7 @@ p6 {
 
 .copyright-section {
     height: 75px;
-    background-color: #8fa18a;
+    background-color: #49829e;
 }
 
 .copyright {
@@ -577,6 +427,7 @@ p6 {
     margin-right: 480px;
     color: #ddcdba;
 }
+
 .menu-toggle {
     display: none;
     background: none;
@@ -588,6 +439,21 @@ p6 {
     right: 20px;
     top: 25px;
 }
+
+.bold-brown {
+    font-weight: bold;
+}
+
+.form-desc p{
+    font-size: 17px;
+    margin-bottom: 5px;
+    margin-left: 60px;
+}
+
+.bold-white {
+    font-weight: bold;
+}
+
 
 @media screen and (max-width: 1024px) {
     .links {
