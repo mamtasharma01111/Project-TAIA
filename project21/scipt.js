@@ -42,16 +42,10 @@ async function handleSubmit(event) {
 
 // Function to open the popup
 function openPopup() {
-    document.getElementById("popup").style.display = "flex"; // Show popup
-    document.getElementById("popupOverlay").style.display = "block"; // Show overlay
+    document.getElementById("popup").style.display = "block";
 }
 
 // Function to close the popup
 function closePopup() {
-    document.getElementById("popup").style.display = "none"; // Hide popup
-    document.getElementById("popupOverlay").style.display = "none"; // Hide overlay
+    document.getElementById("popup").style.display = "none";
 }
-
-// Close when clicking outside the popup
-document.getElementById("popupOverlay").addEventListener("click", closePopup);
-
