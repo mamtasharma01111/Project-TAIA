@@ -80,3 +80,19 @@ async function handleSubmit(event) {
         alert("An error occurred!");
     }
 }
+
+// Function to open the popup
+function openPopup() {
+    document.getElementById("popup").style.display = "flex"; // Show popup
+    document.getElementById("popupOverlay").style.display = "block"; // Show overlay
+}
+
+// Function to close the popup
+function closePopup() {
+    document.getElementById("popup").style.display = "none"; // Hide popup
+    document.getElementById("popupOverlay").style.display = "none"; // Hide overlay
+}
+
+// Close when clicking outside the popup
+document.getElementById("popupOverlay").addEventListener("click", closePopup);
+
