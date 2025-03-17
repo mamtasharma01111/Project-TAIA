@@ -221,14 +221,56 @@ p3 {
     font-family: "Arial", sans-serif;
     margin-bottom: 20px
 }
+
 .gallery {
-    height: 700px;
+    height: 1800px;
+    flex-direction: column;
+}
+
+.gallery-img-box {
+    height: 550px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: #ddcdba;
+    margin-top: 50px;
+}
+
+.gallery-img {
+    height: 720px;
+    width: 460px;
+    gap: 100px;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+
+.image {
+    height: 540px;
+    width: 520px;
+    border-radius: 20px;
+}
+
+.image-text {
+    color: #ffffff;
+    margin-top: -90px;
+    margin-left: 30px;
+    font-size: 22px;
+}
+
+.thick-white {
+    font-weight: bolder;
+}
+
+.lower-text {
+    color: #ffffff;
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.contact-button {
+    margin-left: 44%;
+    margin-top: 50px;
 }
 
 p4 {
