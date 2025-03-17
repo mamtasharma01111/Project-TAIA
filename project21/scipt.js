@@ -9,6 +9,47 @@ document.addEventListener("DOMContentLoaded", function() {
     menuToggle.addEventListener("click", function() {
         document.querySelector(".links").classList.toggle("show");
     });
+    document.getElementById("contactForm")?.addEventListener("submit", handleSubmit);
+
+    // Popup Functions
+    function openPopup(popupId) {
+        const popup = document.getElementById(popupId);
+        const overlay = document.getElementById("popupOverlay");
+    
+        if (popup && overlay) {
+            popup.style.display = "flex";  // Show popup
+            overlay.style.display = "block"; // Show overlay
+        } else {
+            console.error("Popup or overlay not found:", popupId);
+        }
+    }
+
+    function closePopup(popupId) {
+        const popup = document.getElementById(popupId);
+        const overlay = document.getElementById("popupOverlay");
+    
+        if (popup && overlay) {
+            popup.style.display = "none";  // Hide popup
+            overlay.style.display = "none"; // Hide overlay
+        } else {
+            console.error("Popup or overlay not found:", popupId);
+        }
+    }
+    const overlay = document.getElementById("popupOverlay");
+    if (overlay) {
+        overlay.addEventListener("click", function() {
+            document.querySelectorAll(".popup").forEach(popup => {
+                popup.style.display = "none";
+            });
+            overlay.style.display = "none";
+        });
+    }
+
+    // Make popup functions accessible globally
+    window.openPopup = openPopup;
+    window.closePopup = closePopup;
+    
+    console.log("Global Functions:", window.openPopup, window.closePopup);
 });
 
 async function handleSubmit(event) {
@@ -42,10 +83,16 @@ async function handleSubmit(event) {
 
 // Function to open the popup
 function openPopup() {
-    document.getElementById("popup").style.display = "block";
+    document.getElementById("popup").style.display = "flex"; // Show popup
+    document.getElementById("popupOverlay").style.display = "block"; // Show overlay
 }
 
 // Function to close the popup
 function closePopup() {
-    document.getElementById("popup").style.display = "none";
+    document.getElementById("popup").style.display = "none"; // Hide popup
+    document.getElementById("popupOverlay").style.display = "none"; // Hide overlay
 }
+
+// Close when clicking outside the popup
+document.getElementById("popupOverlay").addEventListener("click", closePopup);
+

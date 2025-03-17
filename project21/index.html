@@ -113,8 +113,8 @@
     <div class="simples">
         <p5>Séances simples:</p5>
     </div>
+    <div class="popup-overlay" id="popupOverlay"></div>
     <div class="info-box">
-        <div class="popup-overlay" id="popupOverlay"></div>
        <div class="info">
             <div class="info-content">
                 <img src="hand-icon.png" alt="Icon">
@@ -123,13 +123,13 @@
             <div class="hover-content">
                 <div class="hover-text">Libérez vos blocages, rééquilibrez votre énergie et retrouvez votre sérénité
                     intérieure.</div>
-                <div class="arrow" onclick="openPopup()"></div>
+                <div class="arrow" onclick="openPopup('popup-soins-energetiques')"></div>
             </div>
         </div>
-        <div class="popup" id="popup">
-                <span class="close" onclick="closePopup()">&times;</span> <!-- Close Button -->
+        <div class="popup" id="popup-soins-energetiques" style="display: none;">
+                <span class="close" onclick="closePopup('popup-soins-energetiques')">&times;</span> <!-- Close Button -->
                 <div class="popup-content">
-                <h2>Soins énergétiques             </h2>
+                <h2>Soins énergétiques</h2>
                 <p>Rééquilibrage des chakras et des corps subtiles.</p>
             <p>Le soin énergétique aide à dénouer les blocages qui se manifestent dans le corps. Il s'adresse à ceux qui ressentent un déséquilibre, qu'il soit physique ou émotionnel: fatigue, anxiété, peurs, manque de confiance en soi, ou encore pour ceux qui vivent des schémas répétitifs de blocages et d'échecs.
             </p><br>
@@ -145,7 +145,7 @@
          <div class="hover-content">
             <div class="hover-text">Via l'énergie à haute fréquence, favorisez la guérison du corps, de l'esprit et de l'âme.
             </div>
-            <div class="arrow" onclick="openPopup()"></div>
+            <div class="arrow" onclick="openPopup('popup-soins-energetiques')"></div>
          </div>
          
         </div>
@@ -284,7 +284,7 @@
             <span>CGV</span>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="scipt.js"></script>
 </body>
 
 </html>
