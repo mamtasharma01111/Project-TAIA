@@ -291,6 +291,7 @@ p5 {
 .info-box {
     display: flex;
     margin-top: 20px;
+    margin-bottom: 20px;
     padding-left: 100px;
     padding-right: 100px;
     justify-content: space-between; /* Adjust spacing */
@@ -298,6 +299,7 @@ p5 {
     position: relative;
     gap: 20px; /* Space between boxes */
 }
+
 
 .info {
     width: 275px;
@@ -323,6 +325,8 @@ p5 {
     transition: opacity 0.3s ease-in-out;
     position: relative;
     z-index: 2;
+    font-size: 23px;
+    font-weight: bolder;
 }
 
 .info img {
@@ -338,9 +342,10 @@ p5 {
     transform: translate(-50%, -50%);
     width: 80%;
     text-align: center;
-    font-size: 16px;
-    color: white;
+    font-size: 20px;
+    color: #ddcdba;
     opacity: 0;
+    line-height: 35px;
     transition: opacity 0.3s ease-in-out;
 }
 
