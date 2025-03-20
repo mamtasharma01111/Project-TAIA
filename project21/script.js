@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Popup Functions
     function openPopup(popupId) {
+        document.getElementById(popupId).style.display = "block";
         const popup = document.getElementById(popupId);
         const overlay = document.getElementById("popupOverlay");
     
@@ -25,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function closePopup(popupId) {
+        document.getElementById(popupId).style.display = "none";
         const popup = document.getElementById(popupId);
         const overlay = document.getElementById("popupOverlay");
     
@@ -51,7 +53,18 @@ document.addEventListener("DOMContentLoaded", function() {
     
     console.log("Global Functions:", window.openPopup, window.closePopup);
 });
+function navigatePopup(direction) {
+    let currentPopup = document.querySelector(".popup[style*='display: block']");
+    
+    if (currentPopup) {
+        let nextPopupId = direction === "next" ? currentPopup.getAttribute("data-next") : currentPopup.getAttribute("data-prev");
 
+        if (nextPopupId) {
+            closePopup(currentPopup.id); 
+            openPopup(nextPopupId); 
+        }
+    }
+};
 async function handleSubmit(event) {
     event.preventDefault();
 
