@@ -112,10 +112,10 @@ body{
 }
 
 .main-heading {
-    font-size: 55px;
+    font-size: 60px;
     color: #5a554f; /* Dark brown text */
     font-family: "Arial", sans-serif;
-    font-weight: bold;
+    font-weight: bolder;
     color: #ffffff; /* White */
     margin-top: 120px;
     word-spacing: 2px;
@@ -167,7 +167,7 @@ body{
     font-weight: bold;
     text-transform: uppercase; /* Capitalize text */
     color: white;
-    font-size: 11px; /* Adjust text size */
+    font-size: 12px; /* Adjust text size */
     font-family: Arial, sans-serif;  /* Centers vertically */
 }
 
@@ -210,7 +210,7 @@ p1 {
 p2 {
     font-size: 45px;
     font-family: "Arial", sans-serif;
-    font-weight: bold;
+    font-weight: bolder;
     color: #49829e;
     margin-bottom: 10px;
 }

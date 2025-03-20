@@ -113,7 +113,7 @@ body{
 }
 
 .text-box {
-    width: 48%;
+    width: 50%;
     margin-top: -100px; 
 }
 
@@ -128,14 +128,14 @@ body{
     color: #5a554f; /* Dark brown text */
     font-family: "Arial", sans-serif;
     text-align: center;
-    font-weight: bold;
+    font-weight: bolder;
     color: #ffffff; /* White */
     margin-top: 70px;
 }
 
 .highlight {
     color: #8fa18a; /* Greenish tone */
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .quote {
@@ -185,9 +185,9 @@ body{
 }
 
 .sub-heading {
-    font-size: 50px;
+    font-size: 52px;
     font-family: "Arial", sans-serif;
-    font-weight: bold;
+    font-weight: bolder;
     color: #8fa18a;
     margin-top: 70px;
 }
@@ -225,7 +225,7 @@ p1 {
 p2 {
     font-size: 45px;
     font-family: "Arial", sans-serif;
-    font-weight: bold;
+    font-weight: bolder;
     color: #8fa18a;
     margin-bottom: 10px;
 }
@@ -255,7 +255,7 @@ p3 {
 }
 
 .homeimage2 {
-    margin-top: -250px;
+    margin-top: -290px;
     margin-right: 150px;
     height: 470px;
     width: 350px;
@@ -330,8 +330,8 @@ p5 {
 }
 
 .info img {
-    width: 40px;
-    height: 40px;
+    width: 107px;
+    height: 87px;
     margin-bottom: 10px;
 }
 
