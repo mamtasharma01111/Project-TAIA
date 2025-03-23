@@ -1,24 +1,31 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const menuToggle = document.createElement("button");
-    menuToggle.innerHTML = "☰";
-    menuToggle.classList.add("menu-toggle");
-
+document.addEventListener("DOMContentLoaded", function () {
+    // Create a menu toggle button for mobile navigation
     const navbar = document.querySelector(".navbar");
-    navbar.insertBefore(menuToggle, navbar.children[1]);
+    if (navbar) {
+        const menuToggle = document.createElement("button");
+        menuToggle.innerHTML = "☰";
+        menuToggle.classList.add("menu-toggle");
+        navbar.insertBefore(menuToggle, navbar.children[1]);
 
-    menuToggle.addEventListener("click", function() {
-        document.querySelector(".links").classList.toggle("show");
-    });
+        menuToggle.addEventListener("click", function () {
+            document.querySelector(".links").classList.toggle("show");
+        });
+    }
+
+    // Attach form submission event
     document.getElementById("contactForm")?.addEventListener("submit", handleSubmit);
 
     // Popup Functions
     function openPopup(popupId) {
-        document.getElementById(popupId).style.display = "block";
         const popup = document.getElementById(popupId);
         const overlay = document.getElementById("popupOverlay");
-    
+
         if (popup && overlay) {
-            popup.style.display = "flex";  // Show popup
+            // Hide any other open popups
+            document.querySelectorAll(".popup").forEach(p => p.classList.remove("active"));
+
+            popup.style.display = "flex"; // Show popup
+            popup.classList.add("active");
             overlay.style.display = "block"; // Show overlay
         } else {
             console.error("Popup or overlay not found:", popupId);
@@ -26,45 +33,54 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function closePopup(popupId) {
-        document.getElementById(popupId).style.display = "none";
         const popup = document.getElementById(popupId);
         const overlay = document.getElementById("popupOverlay");
-    
+
         if (popup && overlay) {
             popup.style.display = "none";  // Hide popup
-            overlay.style.display = "none"; // Hide overlay
+            popup.classList.remove("active");
+
+            // Hide overlay only if no popups are open
+            if (!document.querySelector(".popup.active")) {
+                overlay.style.display = "none";
+            }
         } else {
             console.error("Popup or overlay not found:", popupId);
         }
     }
+
+    function navigatePopup(direction) {
+        let currentPopup = document.querySelector(".popup.active");
+
+        if (currentPopup) {
+            let nextPopupId = direction === "next" ? currentPopup.getAttribute("data-next") : currentPopup.getAttribute("data-prev");
+
+            if (nextPopupId) {
+                closePopup(currentPopup.id);
+                openPopup(nextPopupId);
+            }
+        }
+    }
+
+    // Close popup when clicking outside
     const overlay = document.getElementById("popupOverlay");
     if (overlay) {
-        overlay.addEventListener("click", function() {
+        overlay.addEventListener("click", function () {
             document.querySelectorAll(".popup").forEach(popup => {
                 popup.style.display = "none";
+                popup.classList.remove("active");
             });
             overlay.style.display = "none";
         });
     }
 
-    // Make popup functions accessible globally
+    // Make popup functions globally accessible
     window.openPopup = openPopup;
     window.closePopup = closePopup;
-    
-    console.log("Global Functions:", window.openPopup, window.closePopup);
+    window.navigatePopup = navigatePopup;
 });
-function navigatePopup(direction) {
-    let currentPopup = document.querySelector(".popup[style*='display: block']");
-    
-    if (currentPopup) {
-        let nextPopupId = direction === "next" ? currentPopup.getAttribute("data-next") : currentPopup.getAttribute("data-prev");
 
-        if (nextPopupId) {
-            closePopup(currentPopup.id); 
-            openPopup(nextPopupId); 
-        }
-    }
-};
+// Handle Form Submission
 async function handleSubmit(event) {
     event.preventDefault();
 
@@ -93,19 +109,3 @@ async function handleSubmit(event) {
         alert("An error occurred!");
     }
 }
-
-// Function to open the popup
-function openPopup() {
-    document.getElementById("popup").style.display = "flex"; // Show popup
-    document.getElementById("popupOverlay").style.display = "block"; // Show overlay
-}
-
-// Function to close the popup
-function closePopup() {
-    document.getElementById("popup").style.display = "none"; // Hide popup
-    document.getElementById("popupOverlay").style.display = "none"; // Hide overlay
-}
-
-// Close when clicking outside the popup
-document.getElementById("popupOverlay").addEventListener("click", closePopup);
-
