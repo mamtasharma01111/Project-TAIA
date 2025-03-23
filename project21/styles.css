@@ -292,6 +292,7 @@ p3 {
 .details {
     display: none;
     position: relative;
+    font-size: 15px;
     width: 100%;
     z-index: 5;
 }
@@ -306,6 +307,14 @@ p3 {
 
 .certification-container.expanded {
     max-height: 1000px;
+}
+
+.subtitle-collapsed-content {
+    display: block; 
+}
+
+.certification-container.expanded .subtitle-collapsed-content {
+    display: none; 
 }
 
 .title {
@@ -337,7 +346,7 @@ p3 {
     align-items: center;
     cursor: pointer;
     right: -27.5px; /* Half the width to position half outside */
-    margin-top: 10px;
+    margin-top: -7px;
     color: #ddcdba;
     border: 6px solid #ddcdba;
     font-size: 24px;
@@ -352,7 +361,6 @@ p3 {
     bottom: 0;
     right: 0;
     width: 27.5px; /* Half width */
-    
     z-index: -1;
 }
 

@@ -125,3 +125,7 @@ document.addEventListener('DOMContentLoaded', function() {
         container.classList.add('collapsed');
     });
 });
+
+document.getElementById("your-button-id").addEventListener("click", function () {
+    document.querySelector(".collapsed-content").classList.toggle("hidden");
+});
