@@ -109,3 +109,19 @@ async function handleSubmit(event) {
         alert("An error occurred!");
     }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const container = document.querySelector('.certification-container');
+    const downArrow = document.querySelector('.down-arrow');
+    const upArrow = document.querySelector('.up-arrow');
+    
+    downArrow.addEventListener('click', function() {
+        container.classList.remove('collapsed');
+        container.classList.add('expanded');
+    });
+    
+    upArrow.addEventListener('click', function() {
+        container.classList.remove('expanded');
+        container.classList.add('collapsed');
+    });
+});
