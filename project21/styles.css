@@ -397,11 +397,11 @@ p5 {
 .popup {
     display: none; /* Initially hidden */
     position: fixed;
+    pointer-events: none;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50%;
-    max-width: 800; /* Increased width */
+    width: 60%;
     height: auto; /* Allow auto height */
     background-color: #96a78f;
     padding: 30px; /* More spacing */
@@ -449,7 +449,7 @@ p5 {
     left: 50px;
     position: fixed;
     top:35%;
-    font-size: 50px;
+    font-size: 30px;
     cursor: pointer;
     background-color:#96a78f;
     border-radius: 70%;
@@ -466,7 +466,7 @@ p5 {
         right: 50px;
         position: fixed;
         top: 35%;
-        font-size: 50px;
+        font-size: 30px;
         cursor: pointer;
         background-color:#96a78f;
         border-radius: 70%;
