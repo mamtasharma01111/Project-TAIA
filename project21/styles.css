@@ -47,6 +47,7 @@ body{
 
 .links ul {
     list-style: none;
+    margin-top: 0px;
 }
 
 .links a {
@@ -75,11 +76,20 @@ body{
     cursor: pointer;
 }
 
+.buttons {
+    gap: -10px;
+    text-decoration: none;
+}
+
 .btn1 {
     background-color: #49829e;
     color: white;
     justify-content: center;
     width: 155px;
+}
+
+.btn1:hover {
+    background-color: #244c60;
 }
 
 .btn2 {
@@ -310,11 +320,14 @@ p3 {
 }
 
 .subtitle-collapsed-content {
-    display: block; 
+    opacity: 1;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
 }
 
 .certification-container.expanded .subtitle-collapsed-content {
-    display: none; 
+    opacity: 0;
+    max-height: 0;
 }
 
 .title {

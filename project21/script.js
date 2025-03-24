@@ -126,6 +126,21 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+document.querySelectorAll(".toggle-button").forEach(button => {
+    button.addEventListener("click", function () {
+        let content = this.closest(".certification-container").querySelector(".subtitle-collapsed-content");
+
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null; // Collapse
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px"; // Expand smoothly
+        }
+    });
+});
+
+
 document.getElementById("your-button-id").addEventListener("click", function () {
     document.querySelector(".collapsed-content").classList.toggle("hidden");
 });
+
+

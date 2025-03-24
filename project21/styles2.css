@@ -57,8 +57,9 @@ body{
     transition: 0.3s ease;
 }
 
-.links a:hover {
+.links ul a:hover {
     color: #ddcdba;
+    cursor: pointer;
 }
 
 .nav-buttons {
@@ -75,11 +76,20 @@ body{
     cursor: pointer;
 }
 
+.buttons {
+    gap: -10px;
+    text-decoration: none;
+}
+
 .btn1 {
     background-color: #8fa18a;
     color: white;
     justify-content: center;
     width: 155px;
+}
+
+.btn1:hover {
+    background-color: #646f60;
 }
 
 .btn2 {
@@ -117,7 +127,6 @@ body{
     font-family: "Arial", sans-serif;
     font-weight: bolder;
     color: #ffffff; /* White */
-    margin-top: 120px;
     word-spacing: 2px;
     letter-spacing: 1px;
 }
@@ -146,7 +155,6 @@ body{
 
 .text-box {
     width: 48%;
-    margin-top: -100px;
 }
 
 
