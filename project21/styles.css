@@ -9,6 +9,10 @@ body{
     font-family: "Arial", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .navbar {
     height: 85px;
     width: auto;
@@ -19,7 +23,11 @@ body{
     justify-content: space-between;
     padding: 0 20px;
     flex-wrap: nowrap; 
-    
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%; /* Set width to avoid content shift */
 }
 
 .nav-logo {
@@ -122,6 +130,7 @@ body{
     padding-top: 30px;
     background-color: #ddcdba;
     margin-left: 100px;
+    margin-top: 50px;
 }
 
 .text-box {
