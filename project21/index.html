@@ -21,7 +21,7 @@
             <div class="links">
                 <ul><a href="#Accueil">Accueil </a></ul>
                 <ul><a href="#Qui suis-je">Qui suis-je ? </a></ul>
-                <ul><a href="#Lessions">Les sions</a></ul>
+                <ul><a href="#Lessions">Les soins</a></ul>
                 <ul><a href="#Contact">Contact</a></ul>
             </div>
                 <div class="nav-buttons">
@@ -32,8 +32,8 @@
         </div>
     </header>
     <div class="container">
-        <div class="text-box">
-            <h1 class="main-heading" id="Accueil">
+        <div class="text-box" id="Accueil">
+            <h1 class="main-heading" >
  La guérison du <br> <span class="highlight">corps</span>, de l’<span class="highlight">esprit</span> et <br> de l’<span class="highlight">Âme</span>.
 
             </h1>
@@ -60,8 +60,8 @@
         <span>SOINS LAHOCHI</span>
         <span>INITIATION À LA MÉDITATION</span>
     </div>
-    <div class="suis">
-        <p1 id="Qui suis-je">QUI SUIS-JE ?</p1>
+    <div class="suis" id="Qui suis-je">
+        <p1 >QUI SUIS-JE ?</p1>
         <p2>Univers Tαϊα </p2>
         <p3>Une quête de soi, une passion pour l'Être.</p3>
     </div>
@@ -246,15 +246,7 @@
             <div class="arrow" onclick="openPopup('Eveil-de-soi')"></div>
          </div>
          <div class="popup" id="Eveil-de-soi" style="display: none;">
-            <span class="close" onclick="closePopup('Eveil-de-soi')">&times;</span> <!-- Close Button -->
-            <div class="popup-content">
-            <h2>Soins énergétiques</h2>
-            <p>Rééquilibrage des chakras et des corps subtiles.</p>
-            <hr class = 'divider'>
-        <p class="popup-text">Le soin énergétique aide à dénouer les blocages qui se manifestent dans le corps. Il s'adresse à ceux qui ressentent un déséquilibre, qu'il soit physique ou émotionnel: fatigue, anxiété, peurs, manque de confiance en soi, ou encore pour ceux qui vivent des schémas répétitifs de blocages et d'échecs.
-        <br><br>
-    Ce soin facilite la libre circulation de l'énergie, à l'image d'une rivière qui s'écoule à nouveau quand les obstacles sont retirés. Le nombre de séances dépend des besoins spécifiques de chacun; parfois, une seule peut suffire pour apporter un coup de boost revitalisant.</p></div>
-            <img src="Image slider 1.png" alt="Lahochi Treatment" class="popup-image" style="width: 250px; height: 250px;">
+            
         </div>
         </div>
         <div class="info2">
@@ -294,7 +286,7 @@
                 <img src="email.png" alt="icon" class="email-logo">
                 <span class="bold-white"> Email: </span>
             </p>
-            <p>universtaia@gmail.com</p><br>
+            <p>universtaia@gmail.com</p><br/>
             <img src="contact.png" alt="icon" class="contact-logo">
             <p><span class="bold-white"> Cabinet à domicile: </span></p>
             <p>41A chemin de sauveur, 31270, Frouzins </p>
@@ -322,19 +314,23 @@
             <div class="footer-logo"></div>
             <span>Retrouvez moi sur instagram !</span>
             <div class="insta-links">
-                <img src="insta.png" alt="instagram" class="insta-logo">
+                <a href="https://www.instagram.com/univers_taia/" target="_blank" rel="noopener noreferrer">
+                    <img src="insta.png" alt="instagram" class="insta-logo">
+                  </a>                 
                 <span>@univers_taia</span>
                 <span class="link-gap"></span>
-                <img src="insta.png" alt="instagram" class="insta-logo">
+                <a href="https://www.instagram.com/atelier_taia/" target="_blank" rel="noopener noreferrer">
+                    <img src="insta.png" alt="instagram" class="insta-logo">
+                  </a>                 
                 <span>@atelier_taia </span>
             </div>
         </div>
         <div class="footer-2">
             <span class="footer-heading">Le site </span>
-            <span>Accueil </span>
-            <span>Qui suis-je ? </span>
-            <span>Les soins </span>
-            <span>Prix et pack </span>
+            <span><a href="#Accueil">Accueil </a> </span>
+            <span><a href="#Qui suis-je">Qui suis-je ? </a></span>
+            <span><a href="#Lessions">Les soins </a> </span>
+            <span><a href="#Lessions">Prix et pack </a></span>
         </div>
         <div class="footer-3">
             <span class="footer-heading">Contact </span>
@@ -348,10 +344,12 @@
         <div class="footer-line"></div>
         <div class="copyright">
             <span class="copyright-text"> Copyright ©2024 Taia. Tous droits réservés.</span>
-            <span>Mentions légales </span>
-            <span>Politique de confidentialité </span>
-            <span>CGU</span>
-            <span>CGV</span>
+            <div class="copyright-right-group">
+                <span>Mentions légales </span>
+                <span>Politique de confidentialité </span>
+                <span>CGU</span>
+                <span>CGV</span>
+              </div>
         </div>
     </div>
     <script src="script.js"></script>

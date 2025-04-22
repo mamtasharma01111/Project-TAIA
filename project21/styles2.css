@@ -39,7 +39,7 @@ html {
     background-size: 200% auto;
     background-position: center;
     height: 60px;
-    width: 100%;
+    width: 120%;
     margin-left: 80px;
 }
 
@@ -60,7 +60,7 @@ html {
 
 .links a {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 19px;
     color: white;
     padding: 10px 15px;
     transition: 0.3s ease;
@@ -78,7 +78,7 @@ html {
 }
 
 .btn1, .btn2 {
-    font-size: 14px;
+    font-size: 15px;
     padding: 12px 11px;
     border: none;
     border-radius: 8px;
@@ -121,18 +121,18 @@ html {
 }
 
 .container {
-    height: 600px;
+    height: 700px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    margin-left: 100px;
-    margin-top: 70px;
+    margin-left: 170px;
+    margin-top: 80px;
     background-color: #ddcdba;
 }
 
 .main-heading {
-    font-size: 70px;
+    font-size: 72px;
     color: #5a554f; /* Dark brown text */
     font-family: "Arial", sans-serif;
     font-weight: bolder;
@@ -143,7 +143,7 @@ html {
 
 /* Description paragraph */
 .description {
-    font-size: 21px;
+    font-size: 23px;
     color: #5a554f; /* Dark brown */
     line-height: 1.3;
     margin-top: 25px;
@@ -157,9 +157,9 @@ html {
 }
 
 .page2-1 {
-    height: 520px;
-    width: 430px;
-    margin-right: 180px;
+    height: 550px;
+    width: 460px;
+    margin-right: 210px;
 }
 
 
@@ -174,6 +174,7 @@ html {
     background-color: #49829e; /* Background color same as in image */
     display: flex;
     justify-content: space-evenly; /* Distribute text evenly */
+    
 }
 
 .list-bar span {
@@ -185,7 +186,7 @@ html {
     font-weight: bold;
     text-transform: uppercase; /* Capitalize text */
     color: white;
-    font-size: 12px; /* Adjust text size */
+    font-size: 15px; /* Adjust text size */
     font-family: Arial, sans-serif;  /* Centers vertically */
 }
 
@@ -206,12 +207,20 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 155px;
-    font-size: 14px;
+    width: 240px;
+    font-size: 16px;
     padding: 12px 9px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+}
+.btn4:hover {
+    color: white; 
+    text-decoration: none; 
+    background-color: #3b6a83;
 }
 
 p1 {
@@ -221,12 +230,12 @@ p1 {
     color: #49829e;
     padding: 10px 18px;
     display: block;
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 20px;
 }
 
 p2 {
-    font-size: 45px;
+    font-size: 47px;
     font-family: "Arial", sans-serif;
     font-weight: bolder;
     color: #49829e;
@@ -234,7 +243,7 @@ p2 {
 }
 
 p3 {
-    font-size: 16px;
+    font-size: 18px;
     color: #5a554f;
     font-family: "Arial", sans-serif;
     margin-bottom: 20px
@@ -314,10 +323,11 @@ p4 {
     padding-top: 100px;
     height: 630px;
     margin-bottom: 100px;
+    margin-left: 130px;
 }
 
 .form-desc {
-    font-size: 50px;
+    font-size: 52px;
     font-family: "Arial", sans-serif;
     color: #ffffff; /* White */
     max-width: 500px;
@@ -340,11 +350,11 @@ p6 {
     border-radius: 8px;
     color: white;
     font-family: "Arial", sans-serif;
-    font-size: 13px;
+    font-size: 16px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     background-color: #ddcdba;
     position: absolute;
-    right: 100px;
+    right: 180px;
     margin-bottom: 50px;
     margin-left: 100px;
 }
@@ -408,19 +418,19 @@ p6 {
     gap: 200px;
     color: #ddcdba;
     font-family: "Arial", sans-serif;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .footer-heading {
     font-weight: bold;
     margin-bottom: 15px;
-    font-size: 17px;
+    font-size: 19px;
 }
 
 .footer-1 {
     display: flex;
     flex-direction: column;
-    margin-left: 100px;
+    margin-left: 130px;
     margin-top: 50px;
     gap: 35px;
 }
@@ -454,18 +464,28 @@ p6 {
 .footer-2 {
     display: flex;
     flex-direction: column;
-    margin-left: 80px;
+    margin-left: 150px;
     margin-top: 50px;
     gap: 15px;
 }
+span a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  span a:hover {
+    color: inherit;
+    text-decoration: none;
+  }
 
 .footer-3 {
     display: flex;
     flex-direction: column;
-    margin-left: 80px;
+    margin-left: 180px;
     margin-top: 50px;
     gap: 15px;
 }
+
 
 .footer-line {
     height: 1px;
@@ -487,12 +507,21 @@ p6 {
     display: flex;
     flex-direction: row;
     gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .copyright-text {
-    margin-right: 520px;
+    text-align: left;
     color: #ddcdba;
 }
+.copyright-right-group {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-right: 150px;
+  }
 
 .menu-toggle {
     display: none;
