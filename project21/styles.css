@@ -47,9 +47,9 @@ html {
 .links {
     list-style: none;
     display: flex;
-    gap: 10px; 
+    gap: 30px; 
     white-space: nowrap;
-    margin-left: 300px; 
+    margin-left: 450px; 
     flex-grow: 1; 
     align-items: center;
     font-family: "Arial", sans-serif;
@@ -453,8 +453,8 @@ p5 {
 
 
 .info {
-    width: 355px;
-    height: 455px;
+    width: 385px;
+    height: 485px;
     background-color: #ddcdba;
     color: white;
     display: flex;
@@ -476,7 +476,7 @@ p5 {
     transition: opacity 0.3s ease-in-out;
     position: relative;
     z-index: 2;
-    font-size: 25px;
+    font-size: 28px;
     font-weight: bolder;
 }
 
@@ -493,7 +493,7 @@ p5 {
     transform: translate(-50%, -50%);
     width: 80%;
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
     color: #ddcdba;
     opacity: 0;
     line-height: 35px;
@@ -505,14 +505,14 @@ p5 {
     bottom: -20px; /* Moves the arrow outside the box */
     left: 50%;
     transform: translateX(-50%);
-    width: 50px; /* Adjust to match the design */
-    height: 50px;
+    width: 70px; /* Adjust to match the design */
+    height: 70px;
     background-color: #96a78f;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 22px;
+    font-size: 25px;
     color: white;
     opacity: 0;
     transition: opacity 0.3s ease-in-out, background-color 0.3s;
@@ -522,7 +522,7 @@ p5 {
 
 .arrow::after {
     content: "→"; 
-    font-size: 22px;
+    font-size: 25px;
     font-weight: bold;
 }
 
@@ -553,7 +553,7 @@ p5 {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 70%;
-    height: 400px;
+    height: 510px;
      
     background-color: #96a78f;
     padding: 30px; /* More spacing */
@@ -571,7 +571,7 @@ p5 {
     position: absolute;
     top: 15px;
     right: 20px;
-    font-size: 25px;
+    font-size: 39px;
     cursor: pointer;
     color: white;
 }
@@ -582,7 +582,7 @@ p5 {
     font-size:larger;
 }
 .divider {
-    width: 280;
+    width: 200;
     height: 2px;
     background: #ddcdba;
     border: none;
@@ -590,13 +590,13 @@ p5 {
 }
 
 .popup-text {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 /* Popup Image */
 .popup-image {
-    width: 300px;
-    height: 300px;
+    width: 450px;
+    height: 450px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 15px;
@@ -657,13 +657,13 @@ p5 {
 }
 
 .info2 {
-    width: 530px;
-    height: 425px;
+    width: 600px;
+    height: 485px;
     background-color: #ddcdba;
     color: white;
     display: flex;
     flex-direction: column;
-    font-size: 25px;
+    font-size: 30px;
     border-radius: 20px;
     border: 1px solid #f3efeb;
     margin-bottom: 20px;
@@ -689,11 +689,11 @@ p5 {
 }
 
 .form-desc {
-    font-size: 60px;
+    font-size: 68px;
     font-family: "Arial", sans-serif;
     color: #ffffff; /* White */
-    max-width: 600px;
-    word-spacing: 2px;
+    max-width: 750px;
+    word-spacing: 1px;
     letter-spacing: 1px;
     overflow-wrap: break-word;
     font-weight: 100px;
@@ -703,7 +703,7 @@ p5 {
 .form-desc p{
     font-size: 19px;
     margin-bottom: 0px;
-    margin-top: -3px;
+    margin-top: -2px;
     margin-left: 60px;
 }
 
@@ -712,31 +712,31 @@ p5 {
 }
 
 p1i {
-    font-size: 35px;
-    margin-top: 15px;
-    margin-left: 20px;
+    font-size: 40px;
+    margin-top: 45px;
+    margin-left: 30px;
     font-family: "Arial", sans-serif;
     font-weight: bold;
 }
 
 p2i {
-    font-size: 24px;
+    font-size: 35px;
     color: #8fa18a;
     font-family: "Arial", sans-serif;
     font-weight: bold;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 .pack-list {
-    margin-left: 20px;
+    margin-left: 30px;
     margin-top: 15px;
 }
 
 .pack-list li {
-    font-size: 17px;
+    font-size: 20px;
     font-family: "Arial", sans-serif;
     font-weight: bold;
-    margin-left: 20px;
+    margin-left: 30px;
     margin-top: 15px;
 }
 
@@ -753,8 +753,8 @@ p3i {
 }
 
 .info2-head {
-    font-size: 28px;
-    margin-top: 15px;
+    font-size: 40px;
+    margin-top: 45px;
     margin-left: 20px;
     font-family: "Arial", sans-serif;
     font-weight: bold;
@@ -805,6 +805,8 @@ span a {
 /* Submit button styling */
 .form-container button {
     width: 100%;
+    height: 40px;
+    font-size: 15px;
     padding: 10px;
     background-color: #8fa18a;
     color: #ddcdba;
@@ -942,7 +944,7 @@ span a {
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
-    margin-right: 100px;
+    margin-right: 2px;
   }
 
 .menu-toggle {
@@ -956,3 +958,20 @@ span a {
     right: 20px;
     top: 25px;
 }
+
+.rdv-icon {
+    position: fixed;
+    bottom: 150px;
+    right: 60px;
+    width: 90px;
+    height: 90px;
+    z-index: 1000;
+    transition: filter 0.3s ease;
+  }
+  
+  /* Hover effect */
+.rdv-icon:hover {
+    filter: invert(100%) hue-rotate(90deg) saturate(20%) contrast(20%);
+  }
+  
+  
